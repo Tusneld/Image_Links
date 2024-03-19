@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#menu">Menu</a>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our technology section!</p>
+        <img src="Assets/Tech.jpg" alt="code" width="500" height="400">
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="Assets/Waterfall.jpg" alt="Waterfall" width="500px" height="500px">
+            <img src="Assets/jungle.jpg" alt="Jungle">
+            <img src="Assets/lion.jpg" alt="Lion">
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu">
+            <ul>
+                <li><img src="Assets/breakfast.jpg" alt="Breakfast" width="500px" height="500px"> This is my breakfast</li>
+                <li><img src="Assets/green.jpg" alt="Food 2" width="500px" height="500px"> I love green salad</li>
+                <li><img src="Assets/dinner.jpg" alt="Food 3" width="500px" height="500px"> This is my dinner</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
